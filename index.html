@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabajos de Secundaria</title>
+  <style>
+    :root {
+      --bg-color: #f4f9f9;
+      --text-color: #2c3e50;
+      --btn-bg: #2ecc71;
+      --btn-hover: #27ae60;
+      --materia-bg: #ecf0f1;
+      --materia-hover: #d0ece7;
+      --box-bg: #ffffff;
+      --img-radius: 10px;
+    }body.dark {
+  --bg-color: #1e1e2f;
+  --text-color: #e1eaff;
+  --btn-bg: #6c5ce7;
+  --btn-hover: #4834d4;
+  --materia-bg: #2d2e48;
+  --materia-hover: #3a3b5a;
+  --box-bg: #26273d;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;transition:background-color .4s,color .4s}
+body{font-family:'Segoe UI',sans-serif;background-color:var(--bg-color);color:var(--text-color);padding:40px 20px}
+h1{text-align:center;margin-bottom:30px;font-size:42px;font-weight:600}
+.tema-toggle{display:flex;justify-content:center;margin-bottom:30px}
+.tema-toggle button{background:linear-gradient(to right,var(--btn-bg),var(--btn-hover));color:#fff;padding:12px 25px;border:none;border-radius:8px;cursor:pointer;font-size:16px;box-shadow:0 6px 14px rgba(0,0,0,.15)}
+.boton-grado{background-color:var(--btn-bg);color:#fff;padding:15px 25px;margin:15px auto;width:85%;font-size:20px;border:none;border-radius:12px;cursor:pointer;display:block;box-shadow:0 4px 10px rgba(0,0,0,.1);transition:.3s}
+.boton-grado:hover{background-color:var(--btn-hover);transform:translateY(-2px)}
+.contenedor-materias{display:none;background-color:var(--box-bg);border-radius:15px;padding:30px;margin:20px auto 40px;width:90%;max-width:1000px;box-shadow:0 8px 20px rgba(0,0,0,.1)}
+.grid-materias{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.materia{background-color:var(--materia-bg);border-radius:12px;padding:18px;box-shadow:0 4px 8px rgba(0,0,0,.05);transition:.3s}
+.materia:hover{background-color:var(--materia-hover);transform:translateY(-4px)}
+.materia summary{font-size:18px;font-weight:600;cursor:pointer;list-style:none}
+.materia ul{margin-top:10px;padding-left:20px}
+.materia li{margin:6px 0;list-style:disc}
+.materia a{text-decoration:none;color:var(--text-color)}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:20px}
+.galeria img{width:100%;border-radius:var(--img-radius);box-shadow:0 3px 6px rgba(0,0,0,.1)}
+
+  </style>
+  <script>
+    function toggleMaterias(id){const e=document.getElementById(id);e.style.display=e.style.display==="block"?"none":"block"}
+    function toggleTheme(){document.body.classList.toggle('dark')}
+  </script>
+</head>
+<body>
+  <h1>Trabajos de Secundaria</h1>
+  
+  <div class="tema-toggle"><button onclick="toggleTheme()">Cambiar tema</button></div>  <!-- 1° de Secundaria --><button class="boton-grado" onclick="toggleMaterias('materias1')">1° de Secundaria</button>
+
+  <div class="contenedor-materias" id="materias1">
+    <div class="grid-materias">
+      <details class="materia"><summary>Inglés</summary>
+        <ul>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EZ2tfPOo-d1HhV4vFrvwHWIBTRj2U4aiTpreov5qePqTuw" target="_blank">Documento 1</a></li>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EdcByU4CSFFCpDae7LwYlQIByBdIuWktyRz0Ig1Cbc7LiQ" target="_blank">Documento 5</a></li>
+        </ul>
+      </details>
+      <details class="materia"><summary>Formación Cívica y Ética</summary>
+        <ul>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EYobyN0NoRhBixjcOGeF4GQBJP5NzEbN0RHSBlolp3ZXrA" target="_blank">Documento 4</a></li>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/Eb8qcRb20JFAg4EsGH8PdgEBbJK8E3DVQoGXWeUJ7KY6kQ" target="_blank">Documento 9</a></li>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/ERkf_lVDY1tDmbHWwwzdsT0Bkw1mVUf_TX1STAr3mqMptg" target="_blank">Documento 15</a></li>
+          <li><a href="https://1drv.ms/w/c/708a4133b78f533d/ESVjhKG2ovBJu-lZHrpWOY4BqBK5aA6UpSb6ip2dkmECmQ" target="_blank">Guía 2</a></li>
+          <li><a href="https://1drv.ms/w/c/708a4133b78f533d/EeTHSseYI2FOheLIbUSqyH8B_Z5Jii96IxZztJ4vl7VM2Q" target="_blank">Guía 3</a></li>
+          <li><a href="https://1drv.ms/w/c/708a4133b78f533d/EWNSAPS2Jh9Jp74OFu83L8oBDYWiMOr2VT_sPuJ9Nkj20w" target="_blank">Guía 4</a></li>
+        </ul>
+      </details>
+      <details class="materia"><summary>Geografía</summary>
+        <ul>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/Ec_KYIwGLOtEu8w9lD4HHUgBxxG19jr7RgaN3KK5CqheLw" target="_blank">Documento 6</a></li>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EXEr6S_astdMvBlHgIi6cFQBJItdK2Roh-bJKTd_zp_y7A" target="_blank">Documento 11</a></li>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EWqgOncpNaFBsoQLO6hiBr4BZJ6N8SE1Rs5oLSWR8MYRIg" target="_blank">Documento 14</a></li>
+        </ul>
+      </details>
+      <details class="materia"><summary>Matemáticas</summary>
+        <ul>
+          <li><a href="https://1drv.ms/w/c/708a4133b78f533d/EQ8uXWBt-ShNnQEpJj4pKe8Bu-cWHeJbNhwOMs8JDWnphQ" target="_blank">Guía 1</a></li>
+        </ul>
+      </details>
+      <details class="materia"><summary>Historia</summary>
+        <ul>
+          <li><a href="https://1drv.ms/b/c/708a4133b78f533d/ER4u7eV8OXZDldO24CbG20ABapHFTvEpHpryIvRdNl3JBg" target="_blank">Documento 3 (Artes)</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+  <!-- 2° de Secundaria -->
+<button class="boton-grado" onclick="toggleMaterias('materias2')">2° de Secundaria</button>
+<div class="contenedor-materias" id="materias2">
+  <div class="grid-materias">
+
+    <!-- Física -->
+    <details class="materia"><summary>Física</summary>
+      <ul>
+        <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EVn6jMc9vflGtAdqUFKoNJoBjqbJU_bQrcDV6gRVG0iYMA" target="_blank">Documento 2</a></li>
+        <li><a href="https://1drv.ms/b/c/708a4133b78f533d/ERbEn47loDNMp_N1UjsyL5EBXE21XqWEJFBf8fqElwEeaA" target="_blank">Documento 10</a></li>
+      </ul>
+    </details>
+
+    <!-- Formación Cívica y Ética -->
+    <details class="materia"><summary>Formación Cívica y Ética</summary>
+      <ul>
+        <li><a href="https://1drv.ms/b/c/708a4133b78f533d/Ec5y7CpFIE5AoOcC4-OjkMYBCMKXLtGU48Fs31Awb1qaRw" target="_blank">Documento 7</a></li>
+        <li><a href="https://1drv.ms/b/c/708a4133b78f533d/ESwx9XQI1mNDjsIeWv48TYMBlQl8Vw1ZzMWqJT8InuSJUw" target="_blank">Documento 8</a></li>
+        <li><a href="https://1drv.ms/b/c/708a4133b78f533d/EUHBOQ5wZk1KqheZhYI9fKMBKgVvU9W0oOeT3lBrZ1PRjQ" target="_blank">Documento 12</a></li>
+      </ul>
+    </details>
+
+    <!-- Historia -->
+    <details class="materia"><summary>Historia</summary>
+      <ul>
+        <li><a href="https://1drv.ms/b/c/708a4133b78f533d/ERhOizsZ-95Dh-sgGyn3uQMB65IDFvV9mqDgGX_6cbMEhA" target="_blank">Documento 13</a></li>
+      </ul>
+    </details>
+
+  </div>
+</div>
+
+<!-- 3° de Secundaria -->
+<button class="boton-grado" onclick="toggleMaterias('materias3')">3° de Secundaria</button>
+<div class="contenedor-materias" id="materias3">
+  <div class="grid-materias">
+
+    <details class="materia"><summary>Historia</summary>
+      <ul><li><a href="https://1drv.ms/b/c/708a4133b78f533d/EQ_S6cN4XjdGsEeiMNwUT8gBsVY-WKkjneWy9LhHWyY1QA">proyecto</a></li></ul>
+    </details>
+
+    <details class="materia"><summary>Inglés</summary>
+      <ul><li><a href="https://1drv.ms/b/c/708a4133b78f533d/EXZdEMi102FCk_Spnf1XJ4QBGR3g8O1mfPBPkWJ_MJJ36Q">proyecto</a></li></ul>
+    </details>
+
+    <details class="materia"><summary>Formación Cívica y Ética</summary>
+      <ul><li><a href="https://1drv.ms/b/c/708a4133b78f533d/EbR8jgepTPxPgYGM_25SEtYB3MUULKWLWgV1ABZVaOmvVQ">proyecto</a></li></ul>
+    </details>
+
+    <details class="materia"><summary>Química</summary>
+      <ul><li><a href="https://1drv.ms/b/c/708a4133b78f533d/ER_3vH4-YcdCnojQFRgSc5EBFVYs2W47Y-MiwfC7Bwd8gw">proyecto</a></li></ul>
+    </details>
+
+  </div>
+</div>
+
+<!-- Galería de Imágenes -->
+<button class="boton-grado" onclick="toggleMaterias('galeria')">Galería de Imágenes</button>
+<div class="contenedor-materias" id="galeria">
+  <h2 style="text-align:center;margin-bottom:20px;">Imágenes del Proyecto</h2>
+  <div class="galeria">
+    <a href="https://files.catbox.moe/tojfz8.jpg" target="_blank"><img src="https://files.catbox.moe/tojfz8.jpg" alt="Imagen 1"></a>
+    <a href="https://files.catbox.moe/q87sqr.jpg" target="_blank"><img src="https://files.catbox.moe/q87sqr.jpg" alt="Imagen 2"></a>
+    <a href="https://files.catbox.moe/um33tv.jpg" target="_blank"><img src="https://files.catbox.moe/um33tv.jpg" alt="Imagen 3"></a>
+    <a href="https://files.catbox.moe/ibt21x.jpg" target="_blank"><img src="https://files.catbox.moe/ibt21x.jpg" alt="Imagen 4"></a>
+    <a href="https://files.catbox.moe/ur2igs.jpg" target="_blank"><img src="https://files.catbox.moe/ur2igs.jpg" alt="Imagen 5"></a>
+  </div>
+  </div>
